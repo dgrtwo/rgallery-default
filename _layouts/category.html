@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% for snippet in site.pages %}
+  {% if snippet.layout == 'snippet' and snippet.category == page.category %}
+    {% include snippet-grid.html %}
+  {% endif %}
+{% endfor %}

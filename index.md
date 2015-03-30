@@ -5,8 +5,8 @@ title: ""
 ---
 
 <div class="tiles">
-{% for page in site.pages %}
-    {% if page.layout == 'snippet' %}
+{% for snippet in site.pages %}
+    {% if snippet.layout == 'snippet' %}
     	{% include snippet-grid.html %}
     {% endif %}
 {% endfor %}
